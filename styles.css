@@ -1,28 +1,69 @@
-:root{
-    font-size: 16px;
+@font-face {
+ font-family: Lopez;
+ src: url(../fonts/Roboto-Regular.ttf) ;
+ font-style: normal;
+ font-weight: 400;
+
+}
+@font-face {
+    font-family: Lopez;
+    src: url(../fonts/Roboto-Italic.ttf) ;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: Lopez;
+    src: url(../fonts/Roboto-Bold.ttf) ;
+    font-style:normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Lopez;
+    src: url(../fonts/Roboto-BoldItalic.ttf) ;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+:root {
+    font-size: 18px;
+    __gray30:#212121
+    __gray10 #212429
+    __gray10 #616161
 }
 
 body{
-    color:#212121;   
+    color: var(__gray30); 
+    font-family:'Roboto', sans-serif;
+
+
 }
 
 a{
-    color:#212121;
+    color: var(__gray30);
 }
     header{
         font-size:14px; ;
-        color: #616161;
+        color:var(__gray20);
     }
 
     header a {
-      color: #616161
-       text:none;
-    }
+      color: (__gray10);
+    text-decoration:none;
+
+       }
+    
     header a :hover {
-        color: #212121;
+        color: var(__gray30);
     }
     nav details summary{
         font-weight: bold;
+    }
+    ol li:nth-child(even) ¨{
+        border:1px solid red;
     }
 h1{
     font-size: 60px ;
@@ -34,5 +75,5 @@ h2{
 }
 
 h3{
-    font: size 24px;px ;
+    font: size 24px;
 }
